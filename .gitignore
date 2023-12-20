@@ -6,3 +6,5 @@ zik/*
 .mp3*
 
 .env
+
+.playlist/*
