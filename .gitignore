@@ -1,4 +1,3 @@
-
 discord/
 
 zik/*
@@ -7,4 +6,4 @@ zik/*
 
 .env
 
-.playlist/*
+playlist/*
