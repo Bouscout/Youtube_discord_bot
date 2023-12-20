@@ -7,22 +7,20 @@ from video_parser import Music_player
 from collections import deque
 from flow import flow_zik
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 FLOW = flow_zik()
 
-TOKEN = 'MTA4NjA4Nzk0NTk3MjM3MTU1OA.GKE-_0.Xm_kDw10QKjdX0k68gL4FVFe6Eb0xAgsHyhij8'
-CHANEL_ID = 1086089280868319276
-# VOICE_CHANNEL = 1086089280868319277
-# VOICE_CHANNEL = 1086089280868319277
-# GUILD_ID = 1086089280868319272
+# server and bot informations
+TOKEN = os.getenv("TOKEN")
+CHANEL_ID = os.getenv("CHANEL_ID")
+GUILD_ID = os.getenv("GUILD_ID")
 
-# for the main discord
-CHANEL_ID = 909606548609839167
-
-GUILD_ID = 909606548609839164
-
+# state controller
 PLAYING = False
-
 IN_VC = False
 
 
